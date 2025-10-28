@@ -1,0 +1,16 @@
+[project]
+name = "qiskti-fall-fest"
+version = "1.0.0"
+description = "A collection of notebooks and examples for the Qiskit Fall Fest event."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "planqk-commons>=1.31.0",
+    "planqk-quantum>=2.24.0",
+]
+
+[dependency-groups]
+dev = [
+    "notebook>=7.4.0",
+    "pip",
+]

@@ -1,0 +1,9 @@
+{
+  "name": "qiskit-fall-fest",
+  "descriptionFile": "README.md",
+  "resources": {
+    "cpu": 1,
+    "memory": 1
+  },
+  "runtime": "PYTHON_TEMPLATE"
+}
