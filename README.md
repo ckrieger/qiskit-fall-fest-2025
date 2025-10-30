@@ -1,6 +1,10 @@
 # Qiskit Fall Fest 2025
 This repository contains code examples and tutorials for the Kipu Quantum Hub as part of the Qiskit Fall Fest 2025.
 
+Some important links for the session:
+- [Kipu Quantum Hub](https://hub.kipu-quantum.com/): The Kipu Quantum Hub platform where you can deploy and run quantum services.
+- [Quantum Hub Documentation](https://docs.hub.kipu-quantum.com/): Documentation for the Kipu Quantum Hub and its SDKs.
+
 ## Repository Structure
 - `notebooks/`: Contains Jupyter notebooks with code examples demonstrating how to use the Kipu Quantum Hub with our SDKs.
 - `src/`: Contains the source code for a service that is ready to be deployed on the Kipu Quantum Hub.
