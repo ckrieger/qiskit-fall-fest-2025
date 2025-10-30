@@ -1,13 +1,10 @@
-import base64
-import logging
 import time
 from typing import Dict, Any
 
-from loguru import logger
-from planqk.commons.runtime.output import write_string_output, write_binary_output
 from planqk.qiskit import PlanqkQuantumProvider
 from pydantic import BaseModel, Field
 from qiskit import QuantumCircuit, transpile
+
 
 # Pydantic model to express what kind of input data is expected. The model, together with the parameter name of the
 # run() function, defines that the input of the Service API is expected to be `{ "data": { "n_coin_tosses": 2 } }`.
@@ -40,7 +37,6 @@ def run(data: InputData, params: InputParams) -> CalculationResult:
         circuit.h(i)
     circuit.measure_all()
 
-
     # Run "planqk login" or set the environment variable PLANQK_PERSONAL_ACCESS_TOKEN.
     # Alternatively, you can pass the access token as an argument to the constructor:
     # provider = PlanqkQuantumProvider(access_token="YOUR_PERSONAL_ACCESS_TOKEN_HERE")
@@ -57,7 +53,6 @@ def run(data: InputData, params: InputParams) -> CalculationResult:
     elapsed_time = time.time() - start_time
 
     print(counts)
-
 
     # We have to cast the values in the job's counts dictionary to integers to ensure that it can be serialized to JSON.
     counts = {str(k): int(v) for k, v in counts.items()}
