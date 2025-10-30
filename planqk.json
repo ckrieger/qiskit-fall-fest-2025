@@ -1,0 +1,10 @@
+{
+  "name": "qiskit-fall-fest",
+  "descriptionFile": "README.md",
+  "resources": {
+    "cpu": 1,
+    "memory": 1
+  },
+  "runtime": "PYTHON_TEMPLATE",
+  "serviceId": "de64bfd2-bf6a-4901-be6b-5e9589132c40"
+}
